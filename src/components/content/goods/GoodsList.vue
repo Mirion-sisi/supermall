@@ -26,6 +26,15 @@ export default {
       
     };
   },
+  created() {
+    console.log(this.goodsList)
+  },
+  mounted() {
+    console.log(this.goodsList)
+  },
+  updated() {
+     console.log(this.goodsList)
+  },
   methods: {
    
   },

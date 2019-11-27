@@ -1,13 +1,13 @@
 <template>
   <div class="goodsList-item" @click="itemClick">
-    <img :src="showImage" alt @load="itemImageLoad" />
+    <img v-lazy="showImage" alt @load="itemImageLoad" />
     <div class="goods-info">
       <p>{{goodsItem.title}}</p>
       <span class="price">价格:{{goodsItem.price}}</span>
       <span class="collect">{{goodsItem.cfav}}</span>
     </div>
   </div>
-</template>
+</template> 
 <script>
 export default {
     name:'GoodsListItem',
